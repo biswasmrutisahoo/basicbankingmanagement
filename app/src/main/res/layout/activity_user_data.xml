@@ -228,9 +228,10 @@
             android:paddingHorizontal="10dp"
             android:paddingVertical="5dp"
             android:text="Transfer money"
+            android:backgroundTint="#2196F3"
             android:textAllCaps="false"
             android:textSize="15dp"
-            android:textStyle="bold"></Button>
+            android:textStyle="bold"/>
     </RelativeLayout>
 
 </ScrollView>
