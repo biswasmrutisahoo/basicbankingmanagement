@@ -1,12 +1,16 @@
 package com.example.basicbankingproject;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -22,6 +26,7 @@ public class UserListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_list);
+        getSupportActionBar().setTitle("All Customers");
         mRecyclerView=findViewById(R.id.recyclerview);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         showData();
@@ -49,7 +54,20 @@ public class UserListActivity extends AppCompatActivity {
         }
         customerAdapter=new CustomerAdapter(modelList_showlist,UserListActivity.this);
         mRecyclerView.setAdapter(customerAdapter);
+    }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.history_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_history) {
+            Intent transactionintent=new Intent(UserListActivity.this, TransactionHistoryActivity.class);
+            startActivity(transactionintent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

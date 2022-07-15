@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/drawable/ic_baseline_cloud_done_24.xml" value="0.1" />
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.1" />
         <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/activity_send_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/activity_transaction_history.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/activity_transfer_money.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/activity_user_data.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/activity_user_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/custom_dialog_layout.xml" value="0.253125" />
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/transaction_history_adapter.xml" value="0.253125" />
         <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/layout/userslist.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/biswa/AndroidStudioProjects/BasicBankingProject/app/src/main/res/menu/history_menu.xml" value="0.253125" />
       </map>
     </option>
   </component>

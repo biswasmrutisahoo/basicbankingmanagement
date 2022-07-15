@@ -30,6 +30,9 @@ public class UserDataActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_data);
+        getSupportActionBar().hide();
+        getSupportActionBar().setTitle("Customer Details");
+
         name = findViewById(R.id.username);
         phoneNumber = findViewById(R.id.userphonenumber);
         email = findViewById(R.id.email);

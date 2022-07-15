@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -91,10 +92,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public boolean insertTransferData(String date,String from_name, String to_name, String amount, String status){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
+
         contentValues.put(KEY_DATE, date);
         contentValues.put(KEY_FROMNAME, from_name);
         contentValues.put(KEY_TONAME, to_name);
-        contentValues.put(KEY_AMOUNT, amount);
+        contentValues.put(KEY_BALANCE, amount);
         contentValues.put(KEY_STATUS, status);
         Long result = db.insert(TABLE2, null, contentValues);
         if(result == -1){
